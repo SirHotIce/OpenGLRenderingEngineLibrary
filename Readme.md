@@ -128,10 +128,10 @@ struct Vector3Export {
     - You **own** the camera, gameobject, frame, renderer pointers.
     - **Always reuse** created objects instead of creating too many in a loop.
 - For logging, call `_print`, `_printWarning`, or `_printError` from your app if needed.
-- Use Internalpointers to store the created objects and pass where they are needed/n
-EG:/n
-obj #this is an internal pointer# =  _createFrame(width, height);
- _updateFrameSize(obj, width, height);
+- Use Internalpointers to store the created objects and pass where they are needed
+    EG:
+        obj #this is an internal pointer# =  _createFrame(width, height);
+         _updateFrameSize(obj, width, height);
 
 ---
 
