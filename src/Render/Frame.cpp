@@ -74,10 +74,6 @@ namespace Render {
             texture = 0;
         }
 
-        if (depth != 0) {
-            glDeleteRenderbuffers(1, &depth);
-            depth = 0;
-        }
         if (depthTex != 0) {
             glDeleteTextures(1, &depthTex);
             depthTex = 0;
