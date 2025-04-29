@@ -22,6 +22,10 @@ extern "C" {
         float y;
         float z;
     };
+    struct PixelData {
+        unsigned char* p;
+        int count;
+    };
     // Debug Log
     EXPORT_API void _print(std::string message);
     EXPORT_API void _printWarning(std::string message);
@@ -65,7 +69,7 @@ extern "C" {
     //Renderer
     EXPORT_API Render::Renderer* _createRenderer();
     EXPORT_API void _setClearColor(Render::Renderer* renderer, float r, float g, float b);
-    EXPORT_API unsigned char* _renderFrame(Render::Renderer* renderer,Basic::GameObject** game_objects, int count,Matrix::Camera* camera, Render::Frame* frame);
+    EXPORT_API PixelData _renderFrame(Render::Renderer* renderer,Basic::GameObject** game_objects, int count,Matrix::Camera* camera, Render::Frame* frame);
 
 
 }

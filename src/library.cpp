@@ -134,7 +134,8 @@ void _setClearColor(Render::Renderer *renderer, float r, float g, float b) {
     renderer->setClearColor(r, g, b);
 }
 
-unsigned char * _renderFrame(Render::Renderer *renderer, Basic::GameObject **game_objects, int count,
+PixelData _renderFrame(Render::Renderer *renderer, Basic::GameObject **game_objects, int count,
     Matrix::Camera *camera, Render::Frame *frame) {
-    return renderer->render(game_objects, count, camera, frame).data();
+    static std::vector<unsigned char> frameData= renderer->render(game_objects, count, camera, frame);
+    return {frameData.data(), static_cast<int>(frameData.size()) };
 }
