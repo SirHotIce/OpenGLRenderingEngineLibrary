@@ -11,7 +11,7 @@ namespace Render {
 
 class Frame {
 private:
-    GLuint FBO, texture, depth, depthTex;
+    GLuint FBO, texture, depthTex;
     GLint width, height;
     std::vector<unsigned char> pixelData;
     void setupFramebuffer();

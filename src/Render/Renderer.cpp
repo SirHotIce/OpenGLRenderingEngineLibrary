@@ -45,7 +45,7 @@ namespace Render {
         }
         glfwMakeContextCurrent(window);
         glViewport(0,0, 1, 1);
-        glewInit();
+        glewInitialize();
     }
 
     void Renderer::miscInitialize() {}

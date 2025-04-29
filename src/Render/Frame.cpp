@@ -18,10 +18,10 @@ namespace Render {
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texture, 0);
 
-        glGenRenderbuffers(1, &depth);
-        glBindRenderbuffer(GL_RENDERBUFFER, depth);
-        glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, width, height);
-        glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, depth);
+        // glGenRenderbuffers(1, &depth);
+        // glBindRenderbuffer(GL_RENDERBUFFER, depth);
+        // glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, width, height);
+        // glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, depth);
 
         glGenTextures(1, &depthTex);
         glBindTexture(GL_TEXTURE_2D, depthTex);
