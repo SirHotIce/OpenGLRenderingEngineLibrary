@@ -15,15 +15,18 @@ void _printError(std::string message) {
 }
 
 const char* _getLog() {
-    return DebugLog::EngineLog::getEngineLog().c_str();
+    static std::string log = DebugLog::EngineLog::getEngineLog();
+    return log.c_str();
 }
 
 const char* _getWarningLog() {
-    return DebugLog::EngineLog::getEngineWarningLog().c_str();
+    static std::string warningLog = DebugLog::EngineLog::getEngineWarningLog();
+    return warningLog.c_str();
 }
 
 const char* _getErrorLog() {
-    return DebugLog::EngineLog::getEngineErrorLog().c_str();
+    static std::string errorLog = DebugLog::EngineLog::getEngineErrorLog();
+    return errorLog.c_str();
 }
 
 int _getErrorFlag() {
