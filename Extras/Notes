@@ -1,0 +1,12 @@
+::TODO::
+Create shader compiler
+Create Transform and Camera
+Create Pipeline to create and draw to return a Texture on a FBO
+Lights are left
+Shaders are left
+Need to study PBR
+Create transform move for all the objects
+
+
+Just to test create a tester to load the texture to the frame
+Create KB and M callbacks to test the transforms
