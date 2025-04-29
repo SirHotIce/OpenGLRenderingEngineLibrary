@@ -1,9 +1,11 @@
-
 # 📖 OpenGLRenderEngine DLL Basic Usage Guide
 
 Welcome!  
 This DLL provides a simple interface to manage **game objects**, **cameras**, and **render frames** using **OpenGL**, exported for easy use in external applications (e.g., F#, C#, C++ frontend).
-Before you start dowmload the dll file here: https://github.com/SirHotIce/OpenGLRenderingEngineLibrary/blob/main/OpenGLRenderEngine.zip
+
+📥 **Before you start, download the DLL here:**  
+[🔗 OpenGLRenderEngine.zip (GitHub Link)](https://github.com/SirHotIce/OpenGLRenderingEngineLibrary/blob/main/OpenGLRenderEngine.zip)
+
 ---
 
 ## 📦 Summary of What’s Inside
@@ -115,23 +117,3 @@ struct Vector3Export {
     float y;
     float z;
 };
-```
-
-- Returned by value safe, no pointers needed.
-
----
-
-## ⚡ Important Notes
-
-- `unsigned char*` pixel data returned by `_renderFrame` is **RGBA format**, size = `width × height × 4`.
-- Memory management:
-    - You **own** the camera, gameobject, frame, renderer pointers.
-    - **Always reuse** created objects instead of creating too many in a loop.
-- For logging, call `_print`, `_printWarning`, or `_printError` from your app if needed.
-- Use Internalpointers to store the created objects and pass where they are needed
- ### EG:
-  ```cpp
-        obj #this is an internal pointer# =  _createFrame(width, height);
-         _updateFrameSize(obj, width, height);
-  ```
-
