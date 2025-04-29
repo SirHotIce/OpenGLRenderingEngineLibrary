@@ -129,7 +129,9 @@ struct Vector3Export {
     - **Always reuse** created objects instead of creating too many in a loop.
 - For logging, call `_print`, `_printWarning`, or `_printError` from your app if needed.
 - Use Internalpointers to store the created objects and pass where they are needed
-    EG:
+ ### EG:
+  ```cpp
         obj #this is an internal pointer# =  _createFrame(width, height);
          _updateFrameSize(obj, width, height);
+  ```
 
