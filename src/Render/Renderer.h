@@ -5,8 +5,9 @@
 #ifndef RENDERER_H
 #define RENDERER_H
 #include <vector>
-#include <GLFW/glfw3.h>
 #include <GL/glew.h>
+#include <GLFW/glfw3.h>
+
 
 #include "Frame.h"
 #include "../Basic/GameObject.h"
@@ -22,7 +23,7 @@ private:
     bool initialized;
     GLFWwindow* window;
     Basic::Light dirLight;
-    float clearColor[] = { 1.0f, 1.0f, 1.0f, 1.0f };
+    float clearColor[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
 //flags only use after the pp stack is built
     bool postProcess;
     bool fxaa;

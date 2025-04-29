@@ -5,6 +5,11 @@
 #include "EngineLog.h"
 
 namespace DebugLog {
+    std::string EngineLog::log;
+    std::string EngineLog::warningLog;
+    std::string EngineLog::errorLog;
+    int EngineLog::errorFlag = 0;
+
     std::string EngineLog::getEngineLog() {
         return  log;
     }

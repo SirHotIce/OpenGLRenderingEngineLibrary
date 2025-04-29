@@ -1,9 +1,8 @@
 //
 // Created by Vinayak Regmi on 23/04/2025.
 //
-
+#define STB_IMAGE_IMPLEMENTATION
 #include "TextureImporter.h"
-
 #include "../DebugLog/EngineLog.h"
 
 namespace Importer {
