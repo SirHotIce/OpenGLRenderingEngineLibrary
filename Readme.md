@@ -130,7 +130,7 @@ struct Vector3Export {
 - For logging, call `_print`, `_printWarning`, or `_printError` from your app if needed.
 - Use Inrnalpointers to store the created objects and pass where they are needed
 EG:
-obj**<this is an internal pointer>** =  _createFrame(width, height);
+obj <this is an internal pointer> =  _createFrame(width, height);
  _updateFrameSize(obj, width, height);
 
 ---
