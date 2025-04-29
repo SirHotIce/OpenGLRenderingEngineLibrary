@@ -133,22 +133,3 @@ struct Vector3Export {
         obj #this is an internal pointer# =  _createFrame(width, height);
          _updateFrameSize(obj, width, height);
 
----
-
-# 📢 Quick Setup Tips
-
-| Step | Note |
-|:-----|:-----|
-| DLL and `.lib` must be copied near your executable | (or configure linker properly) |
-| Always match your platform (x64 vs x86) | |
-| External dependencies are statically or dynamically linked (GLEW, GLFW, ASSIMP) | |
-| If you need shader files, they are automatically copied by the build system | |
-
----
-
-# 🎯 Final Good Luck!
-
-Enjoy building apps with **OpenGLRenderEngine.dll** 🚀  
-Simple design easy to extend later!
-
----
