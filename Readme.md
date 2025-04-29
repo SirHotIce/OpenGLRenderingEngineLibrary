@@ -128,25 +128,10 @@ struct Vector3Export {
     - You **own** the camera, gameobject, frame, renderer pointers.
     - **Always reuse** created objects instead of creating too many in a loop.
 - For logging, call `_print`, `_printWarning`, or `_printError` from your app if needed.
-
----
-
-## 📋 Minimum Example (Pseudo-F# or C)
-
-```c
-Renderer* renderer = _createRenderer();
-Camera* camera = _createCamera(60.0f, 1.33f, 0.1f, 100.0f);
-Frame* frame = _createFrame(800, 600);
-
-GameObject* cube = _createGameObject("Cube", "cube.obj", "diffuse.png", "normal.png", "metallic.png", "roughness.png");
-
-_moveGameObject(cube, 0.0f, 0.0f, -5.0f);
-
-GameObject* objects[] = { cube };
-unsigned char* pixelData = _renderFrame(renderer, objects, 1, camera, frame);
-
-// Use pixelData...
-```
+- Use Inrnalpointers to store the created objects and pass where they are needed
+EG:
+obj**<this is an internal pointer>** =  _createFrame(width, height);
+ _updateFrameSize(obj, width, height);
 
 ---
 
