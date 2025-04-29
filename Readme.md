@@ -167,8 +167,3 @@ Enjoy building apps with **OpenGLRenderEngine.dll** 🚀
 Simple design easy to extend later!
 
 ---
-
-# ✨
-If you want, I can also create a **basic C# / F# sample project template** that calls this DLL to get you or your friend started faster. 🚀  
-Would you like that too? 🎨  
-(Only 2 minutes to make!)
