@@ -3,7 +3,7 @@
 
 Welcome!  
 This DLL provides a simple interface to manage **game objects**, **cameras**, and **render frames** using **OpenGL**, exported for easy use in external applications (e.g., F#, C#, C++ frontend).
-Before you start dowmload the dll file here: 
+Before you start dowmload the dll file here: https://github.com/SirHotIce/OpenGLRenderingEngineLibrary/blob/main/OpenGLRenderEngine.zip
 ---
 
 ## 📦 Summary of What’s Inside
