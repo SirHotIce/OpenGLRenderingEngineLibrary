@@ -13,19 +13,19 @@ void _printWarning(std::string message) {
 void _printError(std::string message) {
     DebugLog::EngineLog::printError(message);
 }
-
+static std::string plog;
 const char* _getLog() {
-    static std::string log = DebugLog::EngineLog::getEngineLog();
-    return log.c_str();
+     plog = DebugLog::EngineLog::getEngineLog();
+    return plog.c_str();
 }
-
+static std::string warningLog;
 const char* _getWarningLog() {
-    static std::string warningLog = DebugLog::EngineLog::getEngineWarningLog();
+     warningLog= DebugLog::EngineLog::getEngineWarningLog();
     return warningLog.c_str();
 }
-
+static std::string errorLog;
 const char* _getErrorLog() {
-    static std::string errorLog = DebugLog::EngineLog::getEngineErrorLog();
+    errorLog= DebugLog::EngineLog::getEngineErrorLog();
     return errorLog.c_str();
 }
 
