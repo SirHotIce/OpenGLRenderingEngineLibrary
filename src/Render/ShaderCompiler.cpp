@@ -13,7 +13,7 @@ namespace Render {
     GLuint ShaderCompiler::createProgram(std::string vertFile, std::string fragFile) {
         GLuint program = glCreateProgram();
         if (program == 0) {
-            DebugLog::EngineLog::print("Error creating shader program");
+            DebugLog::EngineLog::printError("Error creating shader program");
             const GLubyte* versionPtr = glGetString(GL_VERSION);
             std::string versionStr = versionPtr ? reinterpret_cast<const char*>(versionPtr) : "Uninitialized OpenGL version string";
             DebugLog::EngineLog::print(versionStr);

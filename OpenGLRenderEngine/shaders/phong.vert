@@ -10,6 +10,7 @@ uniform mat4 projection;
 out vec4 position;
 out vec2 uv;
 out vec3 fragPos;
+vec3 normal;
 void main(){
     position= projection*view*model* vec4(pos, 1.0f);
     uv=UV;
