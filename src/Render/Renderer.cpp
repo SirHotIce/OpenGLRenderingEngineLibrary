@@ -44,8 +44,8 @@ namespace Render {
             exit(EXIT_FAILURE);
         }
         glfwMakeContextCurrent(window);
-        glViewport(0,0, 1, 1);
         glewInitialize();
+        glViewport(0,0, 1, 1);
     }
 
     void Renderer::miscInitialize() {}
