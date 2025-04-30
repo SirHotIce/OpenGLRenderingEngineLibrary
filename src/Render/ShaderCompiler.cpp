@@ -43,6 +43,7 @@ namespace Render {
     }
 
     std::string ShaderCompiler::readFile(std::string fileName) {
+
         std::ifstream file(fileName);
         if (!file.is_open()) {
             DebugLog::EngineLog::printError("Couldn't open shader file");

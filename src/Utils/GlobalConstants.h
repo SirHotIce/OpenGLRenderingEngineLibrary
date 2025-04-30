@@ -6,10 +6,10 @@
 #define GLOBALCONSTANSTS_H
 
     namespace Utils::GlobalConstants {
-        inline constexpr const char* phongVS= "shaders/phong.vert";
-        inline constexpr const char* phongFS= "shaders/phong.frag";
-        inline constexpr const char* pbrVS= "shaders/pbr.vs";
-        inline constexpr const char* pbrFS= "shaders/pbr.fs";
+        inline constexpr const char* phongVS= "OpenGLRenderEngine/shaders/phong.vert";
+        inline constexpr const char* phongFS= "OpenGLRenderEngine/shaders/phong.frag";
+        inline constexpr const char* pbrVS= "OpenGLRenderEngine/shaders/pbr.vs";
+        inline constexpr const char* pbrFS= "OpenGLRenderEngine/shaders/pbr.fs";
     }
 
 #endif //GLOBALCONSTANSTS_H
