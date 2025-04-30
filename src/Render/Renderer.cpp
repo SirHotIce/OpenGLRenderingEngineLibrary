@@ -32,6 +32,7 @@ namespace Render {
         glEnable(GL_DEPTH_TEST);
         glEnable(GL_CULL_FACE);
 
+
     }
     void Renderer::initialize() {
         glfwInitialize();

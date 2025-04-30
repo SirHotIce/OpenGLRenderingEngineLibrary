@@ -351,6 +351,14 @@ C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/external/glm/gtc/../ext/
 C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/external/glm/gtc/../ext/vector_uint1.hpp
 C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/external/glm/gtc/../ext/vector_uint1_sized.hpp
 C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/external/glm/gtc/type_ptr.inl
+C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/external/glm/gtx/string_cast.hpp
+C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/external/glm/gtx/../gtc/type_precision.hpp
+C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/external/glm/gtc/type_precision.inl
+C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/external/glm/gtx/../gtx/dual_quaternion.hpp
+C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/external/glm/gtx/dual_quaternion.inl
+C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/external/glm/gtx/string_cast.inl
+C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/include/cstdarg
+C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/include/stdarg.h
 C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/src/Basic/Light.h
 C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/src/Matrix/Camera.h
 C:/Users/Vin/CLionProjects/OpenGLRenderingEngineLibrary/src/Render/Frame.h
