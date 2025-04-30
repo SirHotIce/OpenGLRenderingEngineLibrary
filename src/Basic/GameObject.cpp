@@ -51,6 +51,9 @@ namespace Basic {
         glEnableVertexAttribArray(2);
         glBindVertexArray(0);
 
+        std::string meshLogger= "mesh "+ name+ "Created. It has " + std::to_string((mesh.indices.size()/3)) + " faces and "+ std::to_string(mesh.vertices.size()) + " vertices. It is located at "+ std::to_string(transform.getPosition().x) +", "+ std::to_string(transform.getPosition().y)+", " + std::to_string(transform.getPosition().z);
+        DebugLog::EngineLog::print(meshLogger);
+
     }
     /*
     uniform vec4 lightColor;
@@ -93,7 +96,8 @@ namespace Basic {
         glBindVertexArray(0);
         material.unbindMaterial();
         glUseProgram(0);
-        std::string meshLogger= "mesh "+ name+ "Rendered. It has " + std::to_string((mesh.indices.size()/3)) + " faces and "+ std::to_string(mesh.vertices.size()) + " vertices. It is located at "+ std::to_string(transform.getPosition().x) +", "+ std::to_string(transform.getPosition().y)+", " + std::to_string(transform.getPosition().z);
+
+        std::string meshLogger= "mesh "+ name+ "Rendered.";
         DebugLog::EngineLog::print(meshLogger);
     }
 

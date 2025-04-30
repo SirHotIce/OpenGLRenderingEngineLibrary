@@ -69,9 +69,11 @@ namespace Render {
         glClearColor(clearColor[0], clearColor[1], clearColor[2], clearColor[3]);
         glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 
+        DebugLog::EngineLog::print("Rendering Objects: " +std::to_string(count) );
         for(int i=0; i<count; i++) {
             game_objects[i]->drawObject(camera, &dirLight);
         }
+        DebugLog::EngineLog::print("Rendering Done");
         frame->detach();
         return  frame->getPixelData();
 
