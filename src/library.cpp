@@ -133,9 +133,16 @@ Render::Renderer * _createRenderer() {
 void _setClearColor(Render::Renderer *renderer, float r, float g, float b) {
     renderer->setClearColor(r, g, b);
 }
-static std::vector<unsigned char> frameData;
 PixelData _renderFrame(Render::Renderer *renderer, Basic::GameObject **game_objects, int count,
     Matrix::Camera *camera, Render::Frame *frame) {
-    frameData= renderer->render(game_objects, count, camera, frame);
-    return {frameData.data(), static_cast<int>(frameData.size()) };
+
+    std::vector<unsigned char> result = renderer->render(game_objects, count, camera, frame);
+
+    PixelData data;
+    data.count = static_cast<int>(result.size());
+
+    static std::vector<unsigned char> safeCopy; // lives across calls
+    safeCopy = std::move(result);
+    data.p = safeCopy.data();
+    return data;
 }
