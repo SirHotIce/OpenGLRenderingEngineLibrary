@@ -21,6 +21,8 @@ public:
     void setSize(int width, int height);
     std::vector<unsigned char> getPixelData();
 
+    GLint getWidth();
+    GLint getHeight();
     void attach();
     void detach();
     std::vector<unsigned char> screenshot();

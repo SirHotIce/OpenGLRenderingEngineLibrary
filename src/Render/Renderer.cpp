@@ -66,6 +66,7 @@ namespace Render {
         glfwPollEvents();
         glEnable(GL_DEPTH_TEST|GL_CULL_FACE);
         frame->attach();
+        glViewport(0, 0, frame->getWidth(), frame->getHeight());
         glClearColor(clearColor[0], clearColor[1], clearColor[2], clearColor[3]);
         glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 

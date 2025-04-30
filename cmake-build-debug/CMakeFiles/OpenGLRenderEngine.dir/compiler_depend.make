@@ -354,6 +354,14 @@ CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLi
 CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\ext\vector_uint1.hpp
 CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\ext\vector_uint1_sized.hpp
 CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\type_ptr.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\string_cast.hpp
+CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\..\gtc\type_precision.hpp
+CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\type_precision.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\..\gtx\dual_quaternion.hpp
+CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\dual_quaternion.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\string_cast.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\cstdarg"
+CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdarg.h"
 CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Basic\Light.h
 CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Basic\..\Importer\MeshImporter.h
 CMakeFiles\OpenGLRenderEngine.dir\src\Basic\GameObject.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\assimp_win\include\assimp\Importer.hpp
@@ -2299,6 +2307,14 @@ CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLio
 CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\ext\vector_uint1.hpp
 CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\ext\vector_uint1_sized.hpp
 CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\type_ptr.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\string_cast.hpp
+CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\..\gtc\type_precision.hpp
+CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\type_precision.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\..\gtx\dual_quaternion.hpp
+CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\dual_quaternion.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\string_cast.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\cstdarg"
+CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdarg.h"
 CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Basic\Light.h
 CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Render\..\Matrix\Camera.h
 CMakeFiles\OpenGLRenderEngine.dir\src\Render\Renderer.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Render\..\DebugLog\EngineLog.h
@@ -2959,6 +2975,14 @@ CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProject
 CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\ext\vector_uint1.hpp
 CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\ext\vector_uint1_sized.hpp
 CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\type_ptr.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\string_cast.hpp
+CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\..\gtc\type_precision.hpp
+CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\type_precision.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\..\gtx\dual_quaternion.hpp
+CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\dual_quaternion.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\string_cast.inl
+CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\cstdarg"
+CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdarg.h"
 CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Basic\Light.h
 CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Matrix\Camera.h
 CMakeFiles\OpenGLRenderEngine.dir\src\library.cpp.obj: C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Render\Frame.h
@@ -2977,6 +3001,8 @@ C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Basic\GameObject.cpp
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xtr1common":
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Render\..\Utils\ShaderTypes.h:
+
+C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\type_precision.inl:
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\.\ext\matrix_double3x3.hpp:
 
@@ -3236,6 +3262,8 @@ C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\detail\type
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\detail\compute_vector_decl.hpp:
 
+C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\..\gtx\dual_quaternion.hpp:
+
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\smmintrin.h":
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional":
@@ -3299,6 +3327,8 @@ C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Importer\MeshImporte
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Importer\..\MeshHandling\Texture.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt\corecrt_memory.h":
+
+C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\string_cast.inl:
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\.\ext\matrix_float2x3_precision.hpp:
 
@@ -3604,6 +3634,8 @@ C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\assimp_win\incl
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\cerrno":
 
+C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\..\gtc\type_precision.hpp:
+
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\ext\vector_uint1_sized.hpp:
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\ext\quaternion_relational.inl:
@@ -3652,6 +3684,8 @@ C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\epsilon
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string":
 
+C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\string_cast.hpp:
+
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Basic\..\MeshHandling\Mesh.h:
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\type_ptr.hpp:
@@ -3663,6 +3697,8 @@ C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\gtc\
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\gtc\matrix_transform.hpp:
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\ext\matrix_projection.inl:
+
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\cstdarg":
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\ext\matrix_clip_space.hpp:
 
@@ -3716,6 +3752,10 @@ C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\ext\
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtc\..\ext\vector_uint1.hpp:
 
+C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\glm\gtx\dual_quaternion.inl:
+
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdarg.h":
+
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Basic\..\Importer\MeshImporter.h:
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\external\assimp_win\include\assimp\Importer.hpp:
@@ -3759,8 +3799,6 @@ C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\DebugLog\EngineLog.h
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Importer\..\MeshHandling\Mesh.h:
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Importer\TextureImporter.cpp:
-
-"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdarg.h":
 
 C:\Users\Vin\CLionProjects\OpenGLRenderingEngineLibrary\src\Matrix\Camera.cpp:
 

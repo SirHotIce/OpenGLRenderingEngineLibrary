@@ -17,7 +17,8 @@ namespace Render {
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texture, 0);
-
+        GLenum drawBuffers[1] = {GL_COLOR_ATTACHMENT0};
+        glDrawBuffers(1, drawBuffers);
         // glGenRenderbuffers(1, &depth);
         // glBindRenderbuffer(GL_RENDERBUFFER, depth);
         // glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, width, height);
@@ -89,5 +90,11 @@ namespace Render {
         setupFramebuffer();
     }
 
+    GLint Frame::getWidth() {
+        return width;
+    }
 
+    GLint Frame::getHeight() {
+        return height;
+    }
 } // Render
