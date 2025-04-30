@@ -30,8 +30,7 @@ namespace Render {
             exit(EXIT_FAILURE);
         }
         glEnable(GL_DEPTH_TEST);
-        glEnable(GL_CULL_FACE);
-        glEnable(GL_ARB_arrays_of_arrays);
+        //glEnable(GL_CULL_FACE);
 
     }
     void Renderer::initialize() {
