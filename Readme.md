@@ -135,6 +135,6 @@ Returned by the render function:
 ```cpp
 struct PixelData {
     unsigned char* p; // Pointer to RGBA pixel buffer
-    int count;        // Total number of bytes (width * height * 4)
+    int count;        // Total number of bytes (width * height * 3)
 };
 ```
