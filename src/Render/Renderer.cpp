@@ -9,7 +9,7 @@ namespace Render {
 
     void Renderer::setFlags() {
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
         glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
@@ -30,7 +30,6 @@ namespace Render {
             exit(EXIT_FAILURE);
         }
         glEnable(GL_DEPTH_TEST);
-        glEnable(GL_CULL_FACE);
 
 
     }
@@ -46,6 +45,7 @@ namespace Render {
         glfwMakeContextCurrent(window);
         glewInitialize();
         glViewport(0,0, 1, 1);
+
     }
 
     void Renderer::miscInitialize() {}
@@ -64,17 +64,15 @@ namespace Render {
     std::vector<unsigned char> Renderer::render(Basic::GameObject** game_objects, int count,Matrix::Camera *camera, Frame* frame) {
 
         glfwPollEvents();
-        glEnable(GL_DEPTH_TEST|GL_CULL_FACE);
+        glEnable(GL_DEPTH_TEST);
         frame->attach();
         glViewport(0, 0, frame->getWidth(), frame->getHeight());
         glClearColor(clearColor[0], clearColor[1], clearColor[2], clearColor[3]);
         glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 
-        DebugLog::EngineLog::print("Rendering Objects: " +std::to_string(count) );
         for(int i=0; i<count; i++) {
             game_objects[i]->drawObject(camera, &dirLight);
         }
-        DebugLog::EngineLog::print("Rendering Done");
         frame->detach();
         return  frame->getPixelData();
 

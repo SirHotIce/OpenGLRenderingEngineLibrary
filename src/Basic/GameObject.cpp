@@ -98,14 +98,6 @@ namespace Basic {
         glBindVertexArray(0);
         material.unbindMaterial();
         glUseProgram(0);
-
-        std::string meshLogger= "mesh "+ name+ "Rendered.";
-        DebugLog::EngineLog::print("Draw call index count: " + std::to_string(mesh.indices.size()));
-        DebugLog::EngineLog::print(meshLogger);
-        DebugLog::EngineLog::print("Model Matrix:\n" + glm::to_string(transform.getModel()));
-        DebugLog::EngineLog::print("View Matrix:\n" + glm::to_string(camera->getViewMatrix()));
-        DebugLog::EngineLog::print("Projection Matrix:\n" + glm::to_string(camera->getProjectionMatrix()));
-
     }
 
     Matrix::Transform & GameObject::getTransform() {
