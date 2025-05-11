@@ -3,7 +3,8 @@ project(OpenGLRenderEngine)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_library(OpenGLRenderEngine SHARED src/library.cpp
+add_executable(OpenGLRenderEngine
+        src/library.cpp
         src/DebugLog/EngineLog.cpp
         src/DebugLog/EngineLog.h
         src/MeshHandling/Vertex.h
@@ -37,6 +38,7 @@ add_library(OpenGLRenderEngine SHARED src/library.cpp
         src/Render/Renderer.h
         src/Render/Frame.cpp
         src/Render/Frame.h
+        src/main.cpp
 )
 #link opengl
 find_package(OpenGL REQUIRED)
@@ -74,7 +76,7 @@ add_custom_command(TARGET OpenGLRenderEngine POST_BUILD
 set(GLFW_DIR "${CMAKE_SOURCE_DIR}/external/glfw_${PLATFORM}")
 set(GLFW_INCLUDE_DIR "${GLFW_DIR}/include")
 if (APPLE)
-    set(GLFW_LIBRARY_FILE "${GLFW_DIR}/lib/libglfw.3.dylib")
+    set(GLFW_LIBRARY_FILE "${GLFW_DIR}/lib-arm64/libglfw.3.dylib")
     set(GLFW_COPY_FILE "${GLFW_LIBRARY_FILE}")
 else()
     set(GLFW_LIBRARY_DIR "${GLFW_DIR}/lib-vc2022")
@@ -93,9 +95,13 @@ add_custom_command(TARGET OpenGLRenderEngine POST_BUILD
 # === ASSIMP ===
 set(ASSIMP_DIR "${CMAKE_SOURCE_DIR}/external/assimp_${PLATFORM}")
 set(ASSIMP_INCLUDE_DIR "${ASSIMP_DIR}/include")
-set(ASSIMP_LIBRARY_DIR "${ASSIMP_DIR}/lib/x64")
-set(ASSIMP_LIBRARY_FILE "${ASSIMP_LIBRARY_DIR}/assimp-vc143-mt.lib")
-set(ASSIMP_COPY_FILE "${ASSIMP_DIR}/bin/x64/assimp-vc143-mt.dll")
+if (APPLE)
+    set(ASSIMP_LIBRARY_FILE "${ASSIMP_DIR}/lib/libassimp.5.4.3.dylib")
+    set(ASSIMP_COPY_FILE "${ASSIMP_LIBRARY_FILE}")
+else()
+    set(ASSIMP_LIBRARY_FILE "${ASSIMP_LIBRARY_DIR}/assimp-vc143-mt.lib")
+    set(ASSIMP_COPY_FILE "${ASSIMP_DIR}/bin/x64/assimp-vc143-mt.dll")
+endif ()
 
 target_include_directories(OpenGLRenderEngine PRIVATE ${ASSIMP_INCLUDE_DIR})
 target_link_libraries(OpenGLRenderEngine ${ASSIMP_LIBRARY_FILE})
