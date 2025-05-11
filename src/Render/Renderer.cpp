@@ -9,10 +9,9 @@ namespace Render {
 
     void Renderer::setFlags() {
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-        glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
     }
 
     void Renderer::glfwInitialize() {
@@ -37,15 +36,17 @@ namespace Render {
     void Renderer::initialize() {
         glfwInitialize();
         setFlags();
-        window = glfwCreateWindow(1, 1, "OpenGL Renderer", NULL, NULL);
+        window = glfwCreateWindow( Utils::GlobalConstants::width, Utils::GlobalConstants::height, "OpenGL Renderer", NULL, NULL);
         if (!window) {
             DebugLog::EngineLog::printError("GLFW initialization failed");
             DebugLog::EngineLog::setFlag(7);
-            exit(EXIT_FAILURE);
+            return;
         }
         glfwMakeContextCurrent(window);
         glewInitialize();
-        glViewport(0,0, 1, 1);
+        int bw, bh;
+        glfwGetFramebufferSize(window, &bw, &bh);
+        glViewport(0,0, bw, bh);
 
     }
 
@@ -62,20 +63,15 @@ namespace Render {
 
     }
 
-    std::vector<unsigned char> Renderer::render(Basic::GameObject** game_objects, int count,Matrix::Camera *camera, Frame* frame) {
+   void Renderer::render(Basic::GameObject** game_objects, int count,Matrix::Camera *camera) {
 
         glfwPollEvents();
         glEnable(GL_DEPTH_TEST);
-        frame->attach();
-        glViewport(0, 0, frame->getWidth(), frame->getHeight());
         glClearColor(clearColor[0], clearColor[1], clearColor[2], clearColor[3]);
         glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-
         for(int i=0; i<count; i++) {
             game_objects[i]->drawObject(camera, &dirLight);
         }
-        frame->detach();
-        return  frame->getPixelData();
 
     }
 } // Render

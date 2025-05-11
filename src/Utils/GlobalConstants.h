@@ -10,6 +10,12 @@
         inline constexpr const char* phongFS= "OpenGLRenderEngine/shaders/phong.frag";
         inline constexpr const char* pbrVS= "OpenGLRenderEngine/shaders/pbr.vs";
         inline constexpr const char* pbrFS= "OpenGLRenderEngine/shaders/pbr.fs";
+
+
+
+        inline constexpr int width= 1000;
+        inline constexpr int height= 800;
+
     }
 
 #endif //GLOBALCONSTANSTS_H

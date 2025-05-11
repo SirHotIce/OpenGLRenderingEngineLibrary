@@ -48,7 +48,10 @@ public:
 
     Renderer();
     void setClearColor(float r, float g, float b);
-    std::vector<unsigned char> render(Basic::GameObject** game_objects, int count,Matrix::Camera* camera, Frame* frame);
+    void render(Basic::GameObject** game_objects, int count,Matrix::Camera* camera);
+    GLFWwindow* getWindow() {
+        return window;
+    };
 
 };
 

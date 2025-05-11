@@ -4,7 +4,6 @@ project(OpenGLRenderEngine)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(OpenGLRenderEngine
-        src/library.cpp
         src/DebugLog/EngineLog.cpp
         src/DebugLog/EngineLog.h
         src/MeshHandling/Vertex.h
